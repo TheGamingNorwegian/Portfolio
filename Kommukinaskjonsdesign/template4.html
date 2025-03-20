@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HistorieLiten14</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=SUSE:wght@100..800&display=swap" rel="stylesheet">
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+
+</head>
+<body class="container-HistorieLiten3">
+    <header class="head-HistorieLiten2">
+        <a href="index.html"><img src="img/ERA.png" alt="ERA logo" class="logoHistorieLiten3-img"></a>
+    </header>
+    <main class="HistorieLiten3-main">
+
+        <div id="story3background"></div>
+
+
+        <div class="HistorieLiten3-tittel" id="historieliten3-tittel">
+            <h1 class="HistorieLiten3-tittelh1">Tre måneder med kloakkutslipp i Glomma går mot slutten</h1>
+        </div>
+
+        <div style="height: 800px;"></div>
+
+        <div class="HistorieLiten3-starttext">
+            <p id="story3starttext">Siden september har Sarpsborg kommune vært nødt til å slippe ut store mengder ubehandlet kloakk i Glomma. Ifølge estimatene kan så mye som 3 millioner tonn kloakk ha gått direkte ut i Norges største elv.</p>
+        </div>
+
+        <div style="height: 500px;"></div>
+
+        <div class="HistorieLiten3-starttext">
+            <p id="story3starttext">I kommunens søknad til Statsforvalteren ble det anslått et utslipp på 184–620 liter per sekund opplyser Sarpsborg Arbeiderblad. Gjennomsnittet av dette estimatet er omtrent 402 liter i sekundet.</p>
+        </div>
+
+        <div style="height: 500px;"></div>
+
+        <div class="HistorieLiten3-starttext">
+            <p id="story3starttext">Utslippet skjer som følge av utfordringer med det nye renseanlegget på Alvim som forventes å ferdigstilles i 2027. Det er riktig nok ikke første gang Sarpsborg kommune har sluppet kloakk direkte ut i Glomma og ned til nabobyen Fredrikstad. Det skjedde også i 2012 og 2016.</p>
+        </div>
+
+        <div style="height: 500px;"></div>
+
+        <div class="HistorieLiten3-starttext">
+            <p id="story3starttext">I løpet av tre måneders perioden har det, med estimatene som grunnlag, blitt sluppet ut en enorm mengde kloakk.  </p>
+        </div>
+
+        <div style="height: 1800px;"></div>
+
+        <div class="HistorieLiten3-starttext">
+            <p id="story3starttext">Dersom det ble sluppet ut det maksimale estimatet under hele perioden blir grafene sånn her.</p>
+        </div>
+
+
+        <div id="story3graph" class="story3graph" alt="graf" style="width:100%;max-width:700px;position: fixed;"></div>
+        <div id="story3graph2" class="story3graph2" alt="graf" style="width:100%;max-width:700px;position: fixed;"></div>
+
+        <div style="height: 1800px;"></div>
+
+        <div class="HistorieLiten3-starttext">
+            <p id="story3starttext">Likevel godkjente Statsforvalteren dette utslippet med begrunnelsen om at det nye renseanlegget vil veie opp for utslippene i fremtiden.</p>
+        </div>
+
+        <div style="height: 500px;"></div>
+
+        <div class="HistorieLiten3-starttext">
+            <p id="story3starttext">Dette er en alvorlig belastning for miljøet, og utslippene vil føre til forverret vannkvalitet i Glomma. Ubehandlet kloakk inneholder både næringsstoffer som kan føre til algevekst og oksygenmangel i vannet, samt mikroorganismer som kan utgjøre en helsefare for både mennesker og dyr.</p>
+        </div>
+
+        <div style="height: 500px;"></div>
+
+        <div class="HistorieLiten3-starttext">
+            <p id="story3starttext">Ikke bare er dette en alvorlig belastning for miljøet, men det er ironisk at det samme året som regjeringen innførte et forbud mot at fritidsbåter kan tømme septik i Oslofjorden, godkjenner Statsforvalteren at Sarpsborg kommune skal få dumpe så enorme mengder kloakk i Glomma.</p>
+        </div>
+
+        <div style="height: 500px;"></div>
+
+        <div class="HistorieLiten3-starttext">
+            <p id="story3starttext">For Sarpsborg er dette en stor miljøutfordring, og en påminnelse om sårbarheten i eldre avløpssystemer. Kommunen har varslet at de jobber for å finne løsninger på kort sikt, samtidig som de har satt i gang tiltak for å få ferdigstilt det nye renseanlegget så raskt som mulig.</p>
+        </div>
+
+        <div style="height: 500px;"></div>
+
+        <div class="HistorieLiten3-lasttext">
+            <p id="story3lasttext">I mellomtiden vil både miljøet og innbyggerne i Sarpsborg og Fredrikstad måtte leve med konsekvensene av de midlertidige utslippene i Glomma, som understreker viktigheten av å sikre moderne og robuste avløpssystemer for fremtiden.</p>
+        </div>
+
+
+        <div style="height: 200px;"></div>
+    </main>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // Gjør så ERA logoen forsvinner etter 35 piksler scrolling
+            let lastScrollTop = 0;
+            window.addEventListener('scroll', function() {
+                let header = document.querySelector('.head-HistorieLiten2');
+                let st = window.pageYOffset || document.documentElement.scrollTop;
+
+                if (st > 15) {
+                    header.classList.add('hide-header');
+                } else {
+                    header.classList.remove('hide-header');
+                }
+
+                lastScrollTop = st <= 0 ? 0 : st;
+            });
+
+
+      //skjul tittel etter 350px med animasjon som gjør at tittel forsvinner opp
+      window.addEventListener('scroll', function() { 
+    const titleElement = document.getElementById('historieliten3-tittel');
+
+    if (window.scrollY > 350) { 
+        titleElement.classList.add('title-slide-up');
+    } else { 
+        titleElement.classList.remove('title-slide-up');
+    } 
+});
+
+
+      //skift bakgrunn etter 350px med animasjon så det nye bildet kommer opp fra bunn
+      window.addEventListener('scroll', function () {
+    const backgroundImage = document.getElementById('story3background');
+
+    if (window.scrollY > 350) {
+        backgroundImage.classList.add('background-slide');
+        backgroundImage.style.backgroundImage = "url('img/grafbakgrunn.jpg')";
+    } else {
+        backgroundImage.classList.remove('background-slide');
+        backgroundImage.style.backgroundImage = "url('img/graf-story-bilde2.jpg')";
+    }
+
+    if (window.scrollY > 13600) {
+        backgroundImage.classList.add('fade-background');
+        backgroundImage.style.backgroundImage = "url('img/graf-story-bilde1.jpg')";
+    }
+});
+
+
+
+
+
+
+
+
+
+            // Script som viser den første grafen
+            const xArray1 = [1447200, 34732800, 1041984000, 3125952000];
+            const yArray1 = ["Per time", "Per døgn", "Per måned", "For tre måneder"];
+            const config1 = { responsive: true, staticPlot: true };
+
+            const data1 = [{
+                x: xArray1,
+                y: yArray1,
+                type: "bar",
+                orientation: "h",
+                marker: { color: "rgba(40,40,40,1)" }
+            }];
+
+            const layout1 = {
+                title: "Her er en graf som viser omfanget av kloakkutslipp (Gjennomsnitt)",
+                titlefont: { color: "#282828" },
+                paper_bgcolor: "rgba(0,0,0,0)",
+                plot_bgcolor: "rgba(0,0,0,0)",
+                xaxis: { 
+                    showgrid: false, 
+                    title: "Liter <br> B = milliarder", 
+                    titlefont: { color: "#282828" }, 
+                    tickfont: { color: "#282828" }, 
+                },
+                yaxis: { showgrid: false, tickfont: { color: "#282828" } }
+            };
+
+            Plotly.newPlot("story3graph", data1, layout1, config1);
+
+            // Script som viser den andre grafen
+            const xArray2 = [37200, 2232000, 53568000, 1607040000, 4821120000];
+            const yArray2 = ["Per minutt", "Per time", "Per døgn", "Per måned", "For tre måneder"];
+            const config2 = { responsive: true, staticPlot: true };
+
+            const data2 = [{
+                x: xArray2,
+                y: yArray2,
+                type: "bar",
+                orientation: "h",
+                marker: { color: "rgba(40,40,40,1)" }
+            }];
+
+            const layout2 = {
+                title: "Her er en graf som viser omfanget av kloakkutslipp (Maksimalt)",
+                titlefont: { color: "#282828" },
+                paper_bgcolor: "rgba(0,0,0,0)",
+                plot_bgcolor: "rgba(0,0,0,0)",
+                xaxis: { 
+                    showgrid: false, 
+                    title: "Liter <br> B = milliarder", 
+                    titlefont: { color: "#282828" }, 
+                    tickfont: { color: "#282828" }, 
+                },
+                yaxis: { showgrid: false, tickfont: { color: "#282828" } }
+            };
+
+            Plotly.newPlot("story3graph2", data2, layout2, config2);
+
+            // Setter initial opacity til 0
+            window.addEventListener('load', function() {
+                const graphs = document.querySelectorAll('.story3graph, .story3graph2');
+                graphs.forEach(graph => {
+                    graph.style.opacity = '0';
+                });
+            });
+
+            const start1 = 5500;  // Start animasjon for første graf
+            const end1 = 6500;    // End animasjon for første graf
+            const start2 = 7500;  // Start animasjon for andre graf
+            const end2 = 8500;    // End animasjon for andre graf
+
+            // Script for å gjøre grafene fixed mellom start og end scrolling, med fade effekt
+            window.addEventListener('scroll', function() {
+                const graph1 = document.getElementById('story3graph');
+                const graph2 = document.getElementById('story3graph2');
+                let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+                if (scrollTop >= start1 && scrollTop <= end1) {
+                   
+                    graph1.style.top = '10px';  
+                    graph1.style.opacity = '1';  
+                    graph1.style.transition = 'opacity 0.5s';  
+                } else {
+                  
+                    graph1.style.top = '0px';
+                    graph1.style.opacity = '0';  
+                    graph1.style.transition = 'opacity 0.5s';  
+                }
+
+                if (scrollTop >= start2 && scrollTop <= end2) {
+                   
+                    graph2.style.top = '10px';  
+                    graph2.style.opacity = '1';  
+                    graph2.style.transition = 'opacity 0.5s';  
+                } else {
+                   
+                    graph2.style.top = '0px';
+                    graph2.style.opacity = '0';  
+                    graph2.style.transition = 'opacity 0.5s';  
+                }
+            });
+        });
+    </script>
+</body>
+</html>
