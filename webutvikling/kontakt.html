@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="nb">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Kontakt oss hos Taurus Designs!">
+    <link rel="stylesheet" type="text/css" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Taurus Design`s - Kontakt oss</title>
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+
+
+    <!--Twitter Cards-->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="https://itstud.hiof.no/~magnusge/webutvikling/kontakt.html">
+    <meta name="twitter:creator" content="@GAMINNORWEGIAN?ref_src">
+    <meta name="twitter:title" content="Taurus Design`s UU vs SEO">
+    <meta name="twitter:description" content="Kontakt oss hos Taurus Design`s!">
+    <meta name="twitter:image" content="https://itstud.hiof.no/~magnusge/webutvikling/img/forsidebilde.webp">
+    <meta name="twitter:image:alt" content="Forsidebilde med logo til Taurus Designs">
+
+    <!--Facebook Cards-->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://itstud.hiof.no/~magnusge/webutvikling/kontakt.html">
+    <meta property="og:title" content="Taurus Design`s CMS">
+    <meta property="og:description" content="Kontakt oss hos Taurus Design`s!">
+    <meta property="og:image" content="https://itstud.hiof.no/~magnusge/webutvikling/img/forsidebilde.webp">
+    <meta property="og:image:alt" content="Forsidebilde med logo til Taurus Designs">
+    <meta property="og:locale" content="nb_NO">
+
+
+</head>
+<body>
+    <div id="front-page-container">
+        <header>
+            <a><img id="forsidebilde" src="img/forsidebilde.webp" alt="forside for Taurus Designs"></a>
+            <nav>
+                
+                <a href="forside.html"><img id="logo" src="img/logo.webp" alt="Logo for Taurus Designs"></a>
+                <ul>
+                    <li><a href="forside.html" aria-label="Forsiden" class="andreMenyer">Hjem</a></li>
+                    <li><a href="UUSEO.html" aria-label="UU vs SEO artikkel" class="andreMenyer">UU vs SEO</a></li>
+                    <li><a href="CMS.html" aria-label="CMS artikkel" class="andreMenyer">CMS</a></li>
+                    <li><a href="analyse.html" aria-label="analyse" class="andreMenyer">Analyse</a></li>
+                    <li><a href="kontakt.html" aria-label="kontakt oss" class="andreMenyer">Kontakt oss</a></li>
+                </ul>
+                <div id="hamMenu" onclick="hamMenu(this)">
+                    <div id="bar1"></div>
+                    <div id="bar2"></div>
+                    <div id="bar3"></div>
+                    <div id="bar4"></div>
+                    <div id="bar5"></div>
+                    
+                      <div class="mobile-menu">
+                        <a href="forside.html" aria-label="Forsiden" class="andreMenyerMobil">Hjem</a>
+                        <a href="UUSEO.html" aria-label="UU vs SEO artikkel" class="andreMenyerMobil">UU vs SEO</a>
+                        <a href="CMS.html" aria-label="CMS artikkel" class="andreMenyerMobil">CMS</a>
+                        <a href="analyse.html" aria-label="analyse" class="andreMenyerMobil">Analyse</a>
+                        <a href="kontakt.html" aria-label="kontakt oss" class="andreMenyerMobil">Kontakt oss</a>
+                      </div>
+                </div>
+            </nav>
+        </header>
+    <main>
+        
+
+        <div id="kontaktInfo">
+            <p style="font-size: 40px; margin-bottom: 3%;">Kontaktinformasjon</p>
+            <p><span class="fa fa-envelope"></span> Email: Something@doesntexist.com</p>
+            <p><span class="fa fa-phone"></span> Telefon: 69 60 80 00</p>
+            <p><span class="fa fa-compass"></span> Adresse: B. R. A. Veien 4, 1757 Halden</p>
+
+        </div>
+        
+        <div class="mapouter">
+          <div class="gmap_canvas">
+            <iframe id="gmap_canvas" 
+            src="https://maps.google.com/maps?q=b.r.a%20veien%204&t=k&z=15&ie=UTF8&iwloc=&output=embed" 
+            title="Se oss på kartet" >
+            </iframe>
+            <a href="https://www.whatismyip-address.com" aria-label="Nettadresse for whatismyip.com"></a>
+            <br>
+            <a href="https://www.embedgooglemap.net" aria-label="Nettadresse for embedgooglemap.net"></a>
+          </div>
+        </div>
+       
+        <form>
+            <p>Du kan også kontakte oss via skjema.</p>
+
+            <div>
+                <label for="email"> E-posten din</label>
+            </div>
+            <div>
+                <input type="text" id="email" name="email" placeholder="E-posten din ditt...." autocomplete="on">
+            </div>
+          <div>
+            <label for="firstn"> Fornavn</label>
+        </div>
+        <div>
+            <input type="text" id="firstn" name="firstname" placeholder="Fornavnet ditt...." autocomplete="on">
+        </div>
+          <div>
+            <label for="lastn">Etternavn</label>
+        </div> 
+        <div>
+            <input type="text" id="lastn" name="lastname" placeholder="Etternavnet ditt...." autocomplete="on">
+        </div>
+        <div>
+            <label for="subject">Hva gjelder din henvendelse?</label>
+        </div>
+        <div>
+            <textarea id="subject" name="subject" placeholder="Skriv hva din henvendelse handler om her...."></textarea>
+        </div>
+            <input id="submitKnapp" type="submit" value="submit">
+        </form>
+
+        <div id="shareButtons">
+
+            <div id="share-button-text">
+               <p>Del denne siden!</p>
+            </div>
+    
+            <div class="twitter-share-button">
+
+            <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" aria-label="Twitter" title="Del denne siden på Twitter" class="fa fa-twitter" data-size="large" data-text="Kontakt oss på nettsiden vår!" 
+            data-url="https://itstud.hiof.no/~magnusge/webutvikling/forside.html" data-via="designs_taurus" data-show-count="false"></a>
+    
+        </div>
+        <div class="facebook-share-button">
+            <script async defer crossorigin="anonymous" src="https://connect.facebook.net/nb_NO/sdk.js#xfbml=1&version=v15.0" nonce="p0naoq3X"></script>
+            <div data-href="https://itstud.hiof.no/~magnusge/webutvikling/kontakt.html" data-layout="button_count" data-size="large">
+                <a target="_blank" aria-label="facebook" title="Del denne siden på Facebook" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fitstud.hiof.no%2F%7Emagnusge%2Fwebutvikling%2Fkontakt.html&amp;src=sdkpreparse" 
+                class="fb-xfbml-parse-ignore"><span class="fa fa-facebook"></span></a>
+            </div>
+                <div id="fb-root"></div>
+            
+            </div>
+       
+    
+        <div class="pinterest-share-button">
+            <a href="//www.pinterest.com/pin/create/button/" aria-label="pintrest" title="Del denne siden på pintrest" class="fa fa-pinterest"></a>
+            
+        </div>
+        </div>
+
+    </main>
+    
+    <footer>
+       
+
+        <div class="twitter-follow-button">
+            <a href="https://twitter.com/GAMINNORWEGIAN?ref_src=twsrc%5Etfw" aria-label="Twitter" class="fa fa-twitter" title="Følg oss på Twitter"></a>
+            <a href="https://twitter.com/GAMINNORWEGIAN?ref_src=twsrc%5Etfw" data-size="large" 
+            data-show-screen-name="false" data-show-count="false">Følg oss på Twitter!</a>
+        
+           </div>
+     
+           <div class="facebook-follow-button">
+            <a href="https://www.facebook.com/TaurusDesiqns" aria-label="facebook" class="fa fa-facebook" title="Følg oss på Facebook"></a>
+            <a href="https://www.facebook.com/TaurusDesiqns" data-size="large"  data-show-screen-name="false" data-show-count="false">
+            Følg oss på Facebook!</a>
+           </div>
+     
+           <div class="pinterest-follow-button">
+            <a href="https://no.pinterest.com/" aria-label="pintrest" class="fa fa-pinterest" title="Følg oss på Pintrest"></a>
+            <a href="https://no.pinterest.com/" data-size="large" data-show-screen-name="false" data-show-count="false">Følg oss på pintrest!</a>
+           </div>
+
+        <p>Copyright Taurus Designs ©</p>
+    </footer> 
+<script>
+
+    function hamMenu(menu) {
+    menu.classList.toggle(`open`);
+  }
+  
+  
+  </script>
+  </div>
+</body>
+</html>

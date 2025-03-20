@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="nb">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Analyse av nettsted hos Taurus Designs!">
+    <link rel="stylesheet" type="text/css" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Taurus Design`s - Analyse</title>
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+
+
+      <!--Twitter Cards-->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="https://itstud.hiof.no/~magnusge/webutvikling/analyse.html">
+    <meta name="twitter:creator" content="@GAMINNORWEGIAN?ref_src">
+    <meta name="twitter:title" content="Taurus Design`s analyse">
+    <meta name="twitter:description" content="Analyse artikkel hos Taurus Design`s!">
+    <meta name="twitter:image" content="https://itstud.hiof.no/~magnusge/webutvikling/img/forsidebilde.webp">
+    <meta name="twitter:image:alt" content="Forsidebilde med logo til Taurus Designs">
+
+    <!--Facebook Cards-->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://itstud.hiof.no/~magnusge/webutvikling/analyse.html">
+    <meta property="og:title" content="Taurus Design`s analyse">
+    <meta property="og:description" content="Analyse artikkel hos Taurus Design`s!">
+    <meta property="og:image" content="https://itstud.hiof.no/~magnusge/webutvikling/img/forsidebilde.webp">
+    <meta property="og:image:alt" content="Forsidebilde med logo til Taurus Designs">
+    <meta property="og:locale" content="nb_NO">
+
+
+</head>
+<body>
+
+    <div id="front-page-container">
+        <header>
+            <a><img id="forsidebilde" src="img/forsidebilde.webp" alt="forside for Taurus Designs"></a>
+            <nav>
+                
+                <a href="forside.html"><img id="logo" src="img/logo.webp" alt="Logo for Taurus Designs"></a>
+                <ul>
+                    <li><a href="forside.html" aria-label="Forsiden" class="andreMenyer">Hjem</a></li>
+                    <li><a href="UUSEO.html" aria-label="UU vs SEO artikkel" class="andreMenyer">UU vs SEO</a></li>
+                    <li><a href="CMS.html" aria-label="CMS artikkel" class="andreMenyer">CMS</a></li>
+                    <li><a href="analyse.html" aria-label="analyse" class="andreMenyer">Analyse</a></li>
+                    <li><a href="kontakt.html" aria-label="kontakt oss" class="andreMenyer">Kontakt oss</a></li>
+                </ul>
+                <div id="hamMenu" onclick="hamMenu(this)">
+                    <div id="bar1"></div>
+                    <div id="bar2"></div>
+                    <div id="bar3"></div>
+                    <div id="bar4"></div>
+                    <div id="bar5"></div>
+                    
+                      <div class="mobile-menu">
+                        <a href="forside.html" aria-label="Forsiden" class="andreMenyerMobil">Hjem</a>
+                        <a href="UUSEO.html" aria-label="UU vs SEO artikkel" class="andreMenyerMobil">UU vs SEO</a>
+                        <a href="CMS.html" aria-label="CMS artikkel" class="andreMenyerMobil">CMS</a>
+                        <a href="analyse.html" aria-label="analyse" class="andreMenyerMobil">Analyse</a>
+                        <a href="kontakt.html" aria-label="kontakt oss" class="andreMenyerMobil">Kontakt oss</a>
+                      </div>
+                </div>
+            </nav>
+        </header>
+    <main>
+        <div>
+         <h1>Analyse av nettsted</h1>
+    
+          <br>
+
+          <div class="analyse">
+            <p>Nettsiden er veldig enkel, logisk og det er ingen kompliserte koder som kan skape "feller" som er vanskelig å komme ut av. Vurderingen av nettsiden er derfor for det meste
+                teknisk. Etter å ha kjørt sidene igjennom validator på https://validator.w3.org/ og igjennom en test på lighthouse så valgte jeg å gjøre 
+                følgende endringer på nettsiden for å forbedre ytelse og brukervennlighet.</p>
+          </div>
+          <h2>Lighthouse</h2>
+            
+           <div class="analyse">
+           <a href="analysesiderogexcel/LighthouseForside.html" aria-label="Lightouse test av forside.html" class="kilderLink">Lighthouse test av forside.</a>
+           <p>Jeg har endret alle bildene fra png til webp for bedre kompresjon og webside hastighet. Performance på forside var 61% med .png, men ble til 91% med .webp. 
+            Jeg valgte å bare endre filtypen og ikke nedskalere bildene siden flere og flere har high resolution skjermer som får større fordel 
+            av bedre kvalitet bilder enn å spare noen millisekunder på å laste inn nettsiden. Jeg la også til aria-label`s, meta name description og title på deling og følge knapper
+            for å få opp scoren på accessability. Accessability når ikke fullt 100% fordi lighthouse ikke liker måten jeg har strukterert h1, h2, h3 OSV sin rekkefølge. Men jeg valgte 
+            å ignorere dette siden jeg synes nettsiden ble visuel bedre på måten jeg satt den opp.</p>
+           </div>
+
+
+           <br>
+           <img class="analyseIMG" src="img/meta-name-description-tag.webp" alt="viser en meta name description tag">
+           <br>
+           <img class="analyseIMG" src="img/arialabeltag.webp" alt="viser en aria-label tag">
+           <br>
+           
+
+           <div class="analyse">
+            <a href="analysesiderogexcel/LighthouseUUSEO.html" aria-label="Lighthouse test av UUSEO.html" class="kilderLink">Lighthouse test av UU vs SEO.</a>
+            <a href="analysesiderogexcel/LighthouseCMS.html" aria-label="Lighthouse test av CMS.html" class="kilderLink">Lighthouse test av CMS.</a>
+            <p>På UU vs SEO og CMS la jeg til meta name description for å få SEO score opp fra 80% til 90%. Siste 10% er fordi linkene ikke er crawlable, men 
+                dette er fordi vi hoster nettsidene fra skoleservere som ikke er offentlig. Her så gikk også performance opp fordi jeg endret bildene
+            på logo og forsidebilde fra.png til .webp. Accesability gikk opp fra 89% til til 100% etter jeg endret fargene på kildelinker til en dypere grå/svart 
+            så kontraster mellom tekst og bakgrunn alltid er innen kravene. Og etter jeg ga linkene til deleknappene og følgeknappene en aria-label og title.</p>
+           </div>
+           <br>
+           <br>
+           
+           <div class="analyse">
+            <a href="analysesiderogexcel/LighthouseAnalyse.html" aria-label="Lighthouse test av analyse.html" class="kilderLink">Lighthouse test av Analyse.</a>
+            <p>Siden analyse nettsiden ble laget for deleksamen 4 så har det ikke vært endret stort bortsett fra bildene som ble endret til .webp, 
+                meta name description tag`n som ble lagt til i head, og aria-label`s og title tag`ne som ble lagt til på linker, delings og følge knapper.</p>
+           </div>
+           <br>
+           <br>
+
+           <div class="analyse">
+            <a href="analysesiderogexcel/LighthouseKontakt.html" aria-label="Lighthouse test av kontakt.html" class="kilderLink">Lighthouse test av Kontakt Oss.</a>
+            <p>På kontakt Oss siden ble også bilder endret til .webp, lagt til aria-labels, title tag`r og meta name description. Så ble det lagt til autocomplete tag
+                for skjema og accessability gikk fra 92% til 100% ved å legge til title i iframe tag`n (for google maps).</p>
+           </div>
+           <img class="analyseIMG" src="img/lagt-til-autocomplete-tag-for-form.webp" alt="viser en autocomplete tag">
+
+          <div class="analyse">
+            
+          </div>
+
+          <div class="analyse">
+            <h3 class="underOverskrifter">Visse andre ting jeg endret i koden</h3>
+                
+            <p><br>Ny focus tag så du ser hva du fokuserer på når du bare bruker tastatur.</p>
+
+                <img class="analyseIMG" src="img/Ny-fokus-tag-i-CSS-for-å-gjøre-hva-du-fokuserer-på-med-tastatur-mer-syunlig.webp" alt="viser en CSS tag for fokus når man bruker tastatur på en nettside">
+
+            <p><br>Lagt til ny title tag og aria-label på sosiale medier linker og ikoner for å hjelpe skjermlesere som google assistant med å gi de en forklaring av hva linkene gjør.</p>
+
+                <img class="analyseIMG" src="img/lagt-til-alt-tag-for-sosial-medier.webp" alt="viser en alt tag">
+
+            <p><br>Kontrastforhold mellom tekst-farge og bakgrunns-farge.</p>
+
+                <img class="analyseIMG" src="img/kontraster-mellom-tekst-og-bakgrunn.webp" alt="viser kontrast forhold på 8.91:1 via en kontrast sjekker">
+            <br>
+            <br>
+            <br>
+
+            <h3 class="underOverskrifter">Tabell som viser poeng før og etter tiltak</h3>
+            <p> Denne tabellen viser hvilke poeng nettsiden har fått fra lighthouse før og etter tiltakene som er listet høyere oppe. Disse tiltakene førte til at nettsiden ble drastisk raskere
+                og brukervenneligheten gikk opp.</p>
+
+            <table>
+               <tr>
+                  <th></th>
+                  <th>Performance</th>
+                  <th></th>
+                  <th>Accessability</th>
+                  <th></th>
+                  <th>Best Practices</th>
+                  <th></th>
+                  <th>SEO</th>
+                
+               </tr>
+               <tr>
+                <th>Nettside</th>
+                <th>Før</th>
+                <th>Etter</th>
+                <th>Før</th>
+                <th>Etter</th>
+                <th>Før</th>
+                <th>Etter</th>
+                <th>Før</th>
+                <th>Etter</th>
+             </tr>
+               <tr>
+                  <td>Forside
+                    <a href="analysesiderogexcel/LighthouseForside_gammel.html" aria-label="Lighthouse test av gammel forside.html" class="kilderLink">Før</a>
+                    <a href="analysesiderogexcel/LighthouseForside.html" aria-label="Lighthouse test av forside.html" class="kilderLink">Etter</a>
+                  </td>
+                  <td>61%</td>
+                  <td>91%</td>
+                  <td>95%</td>
+                  <td>98%</td>
+                  <td>100%</td>
+                  <td>100%</td>
+                  <td>80%</td>
+                  <td>90%</td>
+               </tr>
+               <tr>
+                <td>UU vs SEO
+                    <a href="analysesiderogexcel/LighthouseUUSEO_gammel.html" aria-label="Lighthouse test av gammel UUSEO.html" class="kilderLink">Før</a>
+                    <a href="analysesiderogexcel/LighthouseUUSEO.html" aria-label="Lighthouse test av UUSEO.html" class="kilderLink">Etter</a>
+                </td>
+                <td>78%</td>
+                <td>91%</td>
+                <td>89%</td>
+                <td>100%</td>
+                <td>100%</td>
+                <td>100%</td>
+                <td>80%</td>
+                <td>90%</td>
+             </tr>
+             <tr>
+                <td>CMS
+                    <a href="analysesiderogexcel/LighthouseCMS_gammel.html" aria-label="Lighthouse test av gammel kontakt.html" class="kilderLink">Før</a>
+                    <a href="analysesiderogexcel/LighthouseCMS.html" aria-label="Lighthouse test av kontakt.html" class="kilderLink">Etter</a>
+                </td>
+                <td>78%</td>
+                <td>91%</td>
+                <td>89%</td>
+                <td>100%</td>
+                <td>100%</td>
+                <td>100%</td>
+                <td>80%</td>
+                <td>90%</td>
+             </tr>
+             <tr>
+                <td>Analyse
+                    <a href="analysesiderogexcel/LighthouseAnalyse_gammel.html" aria-label="Lighthouse test av gammel analyse.html" class="kilderLink">Før</a>
+                    <a href="analysesiderogexcel/LighthouseAnalyse.html" aria-label="Lighthouse test av analyse.html" class="kilderLink">Etter</a>
+                </td>
+                <td>78%</td>
+                <td>92%</td>
+                <td>94%</td>
+                <td>100%</td>
+                <td>100%</td>
+                <td>100%</td>
+                <td>80%</td>
+                <td>90%</td>
+             </tr>
+             <tr>
+                <td>Kontakt Oss
+                    <a href="analysesiderogexcel/LighthouseKontakt_gammel.html" aria-label="Lighthouse test av gammel kontakt.html" class="kilderLink">Før</a>
+                    <a href="analysesiderogexcel/LighthouseKontakt.html" aria-label="Lighthouse test av kontakt.html" class="kilderLink">Etter</a>
+                </td>
+                <td>76%</td>
+                <td>86%</td>
+                <td>92%</td>
+                <td>100%</td>
+                <td>100%</td>
+                <td>100%</td>
+                <td>80%</td>
+                <td>90%</td>
+             </tr>
+
+            </table>
+            
+
+
+
+          </div>
+          <br>
+          <br>
+         <h2>WCAG-krav</h2>
+
+         <table>
+             <tr>
+               <th>Suksesskriterium</th>
+               <th>Kommentar</th>
+             </tr>
+             <tr>
+               <td>1.1.1 Ikke-tekstlig innhold (Nivå A)</td>
+               <td>Nettstedet følger kravet om tekstalternativ til ikke tekstlig innhold via aria-, title tags og 
+                 alt tag med beskrivelse av hva bilder inneholder.</td>
+             </tr>
+             <tr>
+                 <td>1.3.1 Informasjon og relasjoner (Nivå A)</td>
+                 <td>Nettstede følger kravet om struktur i HTML og CSS kode, på nettsted, i tabeller og skjema`r.</td>
+             </tr>
+             <tr>
+                 <td>1.3.2 Meningsfylt rekkefølge (Nivå A)</td>
+                 <td>Nettstedet følger kravet om å presentere innhold i en meningsfull rekkefølge.</td>
+             </tr>
+             <tr>
+                 <td>1.3.3 Sensoriske egenskaper (Nivå A)</td>
+                 <td>Nettstedet følger kravet om at innhold ikke utelukkende er avhengig av sensoriske egenskaper.</td>
+             </tr>
+             <tr>
+                 <td>1.3.4 Visningsretning (Nivå AA)</td>
+                 <td>Nettstedet følger kravet om visningsretning med å responsivt støtte endring av skjermstørrelse for 
+                     både mobile enheter (vertikale skjermer), datamaskiner (horisontal) og nettbrett (både vertikal og horisontal)</td>
+             </tr>
+             <tr>
+                 <td>1.3.5 Identifiser formål med inndata (Nivå AA)</td>
+                 <td>Nettstedet følger kravet med å autofylle informasjon i skjema på label`ne som bør bruke det.</td>
+             </tr>
+             <tr>
+                 <td>1.4.1 Bruk av farge (Nivå A)</td>
+                 <td>Nettstedet følger kravet om ikke bare bruke farger som eneste måte å presentere innhold. F eks lenker har en underlining, 
+                     og farger/kontraster brukt i NAV-baren er bare estetisk for å vise hva du hovrer over. </td>
+             </tr>
+             <tr>
+                 <td>1.4.3 Kontrast (minimum, Nivå AA)</td>
+                 <td>Nettstedet følger kravet om å ha minimum 4,5:1 kontrast forhold mellom tekst og bakgrunnsfarge.</td>
+             </tr>
+             <tr>
+                 <td>1.4.4 Endring av tekststørrelse (Nivå AA)</td>
+                 <td>Nettstedet følger kravet om at tekst kan endres i størrelse helt opp til 200% uten tap av innhold eller funksjon.</td>
+             </tr>
+             <tr>
+                 <td>1.4.5 Bilder av tekst (Nivå AA)</td>
+                 <td>Nettstedet oppfyller krav om at tekst skal brukes istedenfor bilder av tekst untatt på logoer og forsidebilder.</td>
+             </tr>
+             <tr>
+                 <td>1.4.11 Kontrast for ikke-tekstlig innhold (Nivå AA)</td>
+                 <td>Nettstedet oppfyller kravet med å ha ikke skritlig innhold som er 3:1 mot farger som ligger ved siden av.</td>
+             </tr>
+             <tr>
+                 <td>1.4.13 Pekerfølsomt innhold eller innhold ved tastaturfokus (Nivå AA)</td>
+                 <td>Nettstedet dekker kravet da pekefølsomhet (:hover) bare er brukt i meny punktene til å skifte farge så brukere vet hva de hovrer over.</td>
+             </tr>
+             <tr>
+                 <td>2.1.1 Tastatur (Nivå A)</td>
+                 <td>Nettstedet dekker kravet om at nettstedet kan brukes bare via tastatur.</td>
+             </tr>
+             <tr>
+                 <td>2.1.2 Ingen tastaturfelle (Nivå A)</td>
+                 <td>Nettstedet dekker kravet om ingen tastaturfeller</td>
+             </tr>
+             <tr>
+                 <td>2.1.3 Tastatur (uten unntak) (Nivå AAA)</td>
+                 <td>Nettstedet fungerer med bruk av bare tastatur.</td>
+             </tr>
+             <tr>
+                 <td>2.3.1 Terskelverdi på maksimalt tre glimt (Nivå A)</td>
+                 <td>Nettstedet oppfyller kravene om å ikke ha innhold som blinker i det hele tatt.</td>
+             </tr>
+             <tr>
+                 <td>2.4.1 Hoppe over blokker (Nivå A)</td>
+                 <td>Nettstedet oppfyller kravet med mulighet for å hoppe direkte til hovedinnholdet.</td>
+             </tr>
+             <tr>
+                 <td>2.4.2 Sidetitler (Nivå A)</td>
+                 <td>Nettstedet oppfyller kravet om å ha nyttige og tydelige titler som beskriver sidens emne.</td>
+             </tr>
+             <tr>
+                 <td>2.4.3 Fokusrekkefølge (Nivå A)</td>
+                 <td>Nettsted oppfyller kravet om å presentere innhold i en logisk rekkefølge.</td>
+             </tr>
+             <tr>
+                 <td>2.4.4 Formål med lenke (i kontekst, Nivå A)</td>
+                 <td>Nettstedet oppfyller kravet om at lenketeksten tydelig viser formålet med lenken.</td>
+             </tr>
+             <tr>
+                 <td>2.4.5 Flere måter (Nivå AA)</td>
+                 <td>Nettsted oppfyller delvis kravet om å ha flere måter å navigere på med at logoen kan trykkes på i 
+                     alle innholdssider for å komme til forsiden. Og med at forsiden inneholder linker til 3 andre innholdssider. 
+                 Men jeg regner ikke dette som å dekke kravet.</td>
+             </tr>
+             <tr>
+                 <td>2.4.6 Overskrifter og ledetekster (Nivå AA)</td>
+                 <td>Nettstedet oppfyller kravet om å ha ledetekster og overskrifter som tydelig beskriver emnet.</td>
+             </tr>
+             <tr>
+                 <td>2.4.7 Synlig fokus (Nivå AA)</td>
+                 <td>Nettstedet dekker kravet hvor tastaturbetjente grensesnitt får opp en en tydelig synlig fokusindikator.</td>
+             </tr>
+             <tr>
+                 <td>2.4.10 Deloverskrifter (Nivå AAA)</td>
+                 <td>Nettstedet dekker kravet om å ha deloverskrifter over hver seksjon på en nettside</td>
+             </tr>
+             <tr>
+                 <td>2.5.1 Pekerbevegelser (Nivå A)</td>
+                 <td>Nettstedet dekker kravet om at nettstedet kan brukes  via enkle pekerbevegelser som enkelttrykk, klikk, dobbeltrykk og lange trykk.</td>
+             </tr>
+             <tr>
+                 <td>2.5.2 Pekeravbrytelse (Nivå A)</td>
+                 <td>Nettstedet dekker kravet om at pekerbevegelser kan enkelt avbrytes ved å hovre vekk fra en knapp så slippe opp musepekeren.</td>
+             </tr>
+             <tr>
+                 <td>2.5.3 Ledetekst i navn (Nivå A)</td>
+                 <td>Nettstedet dekker kravet med å bruke aria-label`s.</td>
+             </tr>
+             <tr>
+                 <td>3.1.1 Språk på siden (Nivå A)</td>
+                 <td>Nettstedet dekker kravet om å vise hvilket språk nettsiden er på ved å bruke nb i HTML koden.</td>
+             </tr>
+             <tr>
+                 <td>3.2.1 Fokus (Nivå A)</td>
+                 <td>Nettstedet dekker kravet om at komponenter i fokus ikke gjør betydelige endringer på nettsiden.</td>
+             </tr>
+             <tr>
+                 <td>3.2.3 Konsekvent navigering (Nivå AA)</td>
+                 <td>Nettstedet dekker kravet om at navigeringsmekanismen opptrer i samme rekkefølge hver gang de gjentas på sidene.</td>
+             </tr>
+             <tr>
+                 <td>3.2.3 Konsekvent navigering (Nivå AA)</td>
+                 <td>Nettstedet dekker kravet om at navigeringsmekanismen opptrer i samme rekkefølge hver gang de gjentas på sidene.</td>
+             </tr>
+             <tr>
+                 <td>3.2.4 Konsekvent identifikasjon (Nivå AA)</td>
+                 <td>Nettstedet dekker kravet om at komponeter som har samme funksjonalitet identifiseres på samme måte.</td>
+             </tr>
+             <tr>
+                 <td>3.3.2 Ledetekster eller instruksjoner (Nivå A)</td>
+                 <td>Nettstedet dekker kravet om at det er ledetekster/instruksjoner for skjemaelementer som må fylles ut.</td>
+             </tr>
+             <tr>
+                 <td>4.1.1 Parsing (oppdeling, Nivå A)</td>
+                 <td>Nettstedet dekker kravet om at det ikke skal være noen store kode feil.</td>
+             </tr>
+             <tr>
+                 <td>4.1.2 Navn, rolle, verdi (Nivå A)</td>
+                 <td>Nettstedet dekker kravet om at alle komponenter har navn og rolle bestemt i koden.</td>
+             </tr>
+         </table>
+         
+             <a href="analysesiderogexcel/WCAG-tilgjengelighetserklaering.xlsx" aria-label="Tilgjengelighetserklaering for nettsiden" class="kilderLink">Tilgjengelighetserklæring for nettsiden.</a>
+           
+ 
+ 
+        
+     </div>
+          
+        
+
+        <div id="share-button-text">
+            <p>Del denne siden!</p>
+         </div> 
+
+        <div class="twitter-share-button">
+
+            <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" aria-label="Twitter" title="Del denne siden på Twitter" class="fa fa-twitter" data-size="large" data-text="Kontakt oss på nettsiden vår!" 
+            data-url="https://itstud.hiof.no/~magnusge/webutvikling/forside.html" data-via="designs_taurus" data-show-count="false"></a>
+    
+        </div>
+        <div class="facebook-share-button">
+            <script async defer crossorigin="anonymous" src="https://connect.facebook.net/nb_NO/sdk.js#xfbml=1&version=v15.0" nonce="p0naoq3X"></script>
+            <div data-href="https://itstud.hiof.no/~magnusge/webutvikling/kontakt.html" data-layout="button_count" data-size="large">
+                <a target="_blank" aria-label="facebook" title="Del denne siden på Facebook" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fitstud.hiof.no%2F%7Emagnusge%2Fwebutvikling%2Fkontakt.html&amp;src=sdkpreparse" 
+                class="fb-xfbml-parse-ignore"><span class="fa fa-facebook"></span></a>
+            </div>
+                <div id="fb-root"></div>
+            
+            </div>
+       
+    
+        <div class="pinterest-share-button">
+            <a href="//www.pinterest.com/pin/create/button/" aria-label="pintrest" title="Del denne siden på pintrest" class="fa fa-pinterest"></a>
+            
+        </div>
+    
+</main>
+</div>
+    <footer>
+        
+
+        <div class="twitter-follow-button">
+            <a href="https://twitter.com/GAMINNORWEGIAN?ref_src=twsrc%5Etfw" aria-label="Twitter" class="fa fa-twitter" title="Følg oss på Twitter"></a>
+            <a href="https://twitter.com/GAMINNORWEGIAN?ref_src=twsrc%5Etfw" data-size="large" 
+            data-show-screen-name="false" data-show-count="false">Følg oss på Twitter!</a>
+        
+           </div>
+     
+           <div class="facebook-follow-button">
+            <a href="https://www.facebook.com/TaurusDesiqns" aria-label="facebook" class="fa fa-facebook" title="Følg oss på Facebook"></a>
+            <a href="https://www.facebook.com/TaurusDesiqns" data-size="large"  data-show-screen-name="false" data-show-count="false">
+            Følg oss på Facebook!</a>
+           </div>
+     
+           <div class="pinterest-follow-button">
+            <a href="https://no.pinterest.com/" aria-label="pintrest" class="fa fa-pinterest" title="Følg oss på Pintrest"></a>
+            <a href="https://no.pinterest.com/" data-size="large" data-show-screen-name="false" data-show-count="false">Følg oss på pintrest!</a>
+           </div>
+
+       <p>Copyright Taurus Designs ©</p>
+    </footer> 
+
+<script>
+
+    function hamMenu(menu) {
+    menu.classList.toggle(`open`);
+  }
+  
+  
+  </script>
+
+</body>
+</html>
